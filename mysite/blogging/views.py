@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import loader
-from blogging.models import Post
+from blogging.models import Post, Category
+from django.contrib.auth.models import User, Group
 from django.shortcuts import render
 
 def list_view(request):
